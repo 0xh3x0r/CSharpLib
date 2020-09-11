@@ -10,8 +10,8 @@ namespace XOREncryption
     {
 
         // Make sure your magic numbers are below < 255 otherwise it might overflow 2 bytes space.
-        public static int magicNumber = 30;
-        public static int magicNumber2 = 30;
+        public static int magicNumber = 25;
+        public static int magicNumber2 = 20;
 
 
         // Crypts char value into 2 byte array
