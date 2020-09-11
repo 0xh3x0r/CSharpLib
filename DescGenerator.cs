@@ -21,6 +21,7 @@ namespace _DescGenerator
             HtmlMeta metaTag = new HtmlMeta { Name = "keywords" };
             string oneline = ""; // Var to convert keywods into one line string
 
+            if (targetPage.MetaKeywords == null) targetPage.MetaKeywords = "";
             int meta_length = targetPage.MetaKeywords.Length;
             if (meta_length > 0)
              words[0] = (targetPage.MetaKeywords[meta_length - 1] == ',') ? words[0] : words[0].Insert(0, ",")  ; // if the last keywords ends with ',' add word to start else add without starting ','
